@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: #fff;
+  padding: 40px 20px;
+}
+.container {
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
+.profile-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #00ffff;
+  margin-bottom: 20px;
+}
+h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+h2 {
+  font-size: 20px;
+  color: #00ffff;
+  margin-bottom: 20px;
+  min-height: 30px;
+}
+p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+.social-links a {
+  color: #00ffff;
+  margin: 0 10px;
+  font-size: 20px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.social-links a:hover {
+  color: #fff;
+}
+.section {
+  margin-top: 50px;
+  text-align: left;
+}
+.section h3 {
+  color: #00ffff;
+  margin-bottom: 15px;
+}
+.projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.project {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-radius: 10px;
+}
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+.contact-form button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #00ffff;
+  border: none;
+  color: #000;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}

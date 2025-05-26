@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ahsan Ali - Game Developer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <img src="profile.jpg" alt="Ahsan Ali" class="profile-img" />
+    <h1>Ahsan Ali</h1>
+    <h2 id="typing"></h2>
+    <p>Hello! I'm Ahsan Ali, a passionate game developer who loves to build exciting and immersive gaming experiences. I specialize in Unity and enjoy creating mods and stunts for GTA V. I'm always learning and pushing the boundaries of what's possible in game development.</p>
+    <div class="social-links">
+      <a href="https://github.com/" target="_blank">GitHub</a>
+      <a href="https://youtube.com/" target="_blank">YouTube</a>
+      <a href="https://linkedin.com/" target="_blank">LinkedIn</a>
+    </div>
+
+    <div class="section">
+      <h3>Projects</h3>
+      <div class="projects">
+        <div class="project">
+          <h4>GTA V Ramp Mod</h4>
+          <p>A custom stunt ramp mod made for GTA V with smooth curves and fun gameplay.</p>
+        </div>
+        <div class="project">
+          <h4>Unity Car Game</h4>
+          <p>A car racing game developed in Unity featuring physics-based controls and AI opponents.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h3>Contact Me</h3>
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    const text = "Game Developer | Modder | Unity Enthusiast";
+    let i = 0;
+    function typingEffect() {
+      if (i < text.length) {
+        document.getElementById("typing").innerHTML += text.charAt(i);
+        i++;
+        setTimeout(typingEffect, 100);
+      }
+    }
+    typingEffect();
+  </script>
+</body>
+</html>
